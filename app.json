@@ -10,7 +10,7 @@
     ],
     "repository": "https://github.com/ymwd/anktsavecont.2",
     "website": "",
-    "success_url": "https://t.me/url_uploader_A",
+    "success_url": "https://t.me/Restricted_Forward_bot",
     "env": {
         "API_HASH": {
             "description": "Your API HASH from my.telegram.org",
