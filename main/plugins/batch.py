@@ -64,7 +64,7 @@ async def _batch(event):
             except ValueError:
                 return await conv.send_message("Range must be an integer!")
             s, r = await check(userbot, Bot, _link)
-            if s != True:
+            if s !== True:
                 await conv.send_message(r)
                 return
             batch.append(f'{event.sender_id}')
