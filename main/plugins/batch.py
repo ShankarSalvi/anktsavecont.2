@@ -34,7 +34,7 @@ async def _batch(event):
     # wtf is the use of fsub here if the command is meant for the owner? 
     # well am too lazy to clean 
     s, r = await force_sub(event.client, fs, event.sender_id, ft) 
-    if s = True:
+    if s == True:
         await event.reply(r)
         return       
     if f'{event.sender_id}' in batch:
@@ -64,7 +64,7 @@ async def _batch(event):
             except ValueError:
                 return await conv.send_message("Range must be an integer!")
             s, r = await check(userbot, Bot, _link)
-            if s !== True:
+            if s != True:
                 await conv.send_message(r)
                 return
             batch.append(f'{event.sender_id}')
